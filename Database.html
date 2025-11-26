@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Database Management | NaveenPambala</title>
+    <!-- Linking CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fontawesome link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+
+<body>
+    <header class="bg-dark fixed-top">
+        <nav class="container-xxl navbar navbar-expand-lg py-3 bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold fs-3" href="index.html">Pambala Naveen</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#skills">SKILLS</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#cv">CURRICULUM VITAE</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#contact">CONTACT</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero d-flex flex-column align-items-center justify-content-center">
+        <div class="text-center">
+            <h1 class="h1 text-white fw-medium fst-italic">Learn</h1>
+            <h2 class="display-3 text-white fw-bold">Database<br /> Management</h2>
+            <a href="#content" class="btn btn-lg fs-6 fw-medium mt-5 btn-primary p-3">TELL ME MORE</a>
+        </div>
+    </section>
+
+    <div class="main_container" style="padding: 40px 20px;" id="content">
+        <div class="container">
+            <h1 class="text-center mb-4">Database Management</h1>
+            <p class="lead text-center mb-5"><strong>Simple Explanation:</strong> A database is like a digital filing cabinet where you organize and store information. Just like you organize documents in folders, databases organize data in tables. Database management is about creating, organizing, and retrieving this information efficiently.</p>
+
+            <!-- What is a Database -->
+            <section class="mb-5">
+                <h2>What is a Database?</h2>
+                <p>A database is an organized collection of data stored electronically in a computer system. It allows you to store, retrieve, update, and manage large amounts of information efficiently.</p>
+                <p><strong>Real-World Example:</strong> Think of a library:</p>
+                <ul>
+                    <li><strong>Database:</strong> The entire library building with all its systems</li>
+                    <li><strong>Tables:</strong> Different sections (Fiction, Non-Fiction, Reference)</li>
+                    <li><strong>Rows:</strong> Individual books on the shelves</li>
+                    <li><strong>Columns:</strong> Book properties (Title, Author, ISBN, Year)</li>
+                    <li><strong>Queries:</strong> Searching for specific books using the catalog system</li>
+                </ul>
+            </section>
+
+            <!-- Why Do We Need Databases -->
+            <section class="mb-5 bg-light p-4 rounded">
+                <h2>Why Do We Need Databases?</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>📊 Organize Data</h5>
+                        <p>Structure large amounts of information in an organized, logical way</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>⚡ Quick Access</h5>
+                        <p>Find and retrieve specific information in seconds from millions of records</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>🔒 Data Security</h5>
+                        <p>Control who can access and modify data, protecting sensitive information</p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <h5>🔄 Consistency</h5>
+                        <p>Ensure data accuracy and prevent conflicts when multiple users access it</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>💾 Storage Efficiency</h5>
+                        <p>Store massive amounts of data without duplication</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>🔗 Relationships</h5>
+                        <p>Connect related data (like customers and their orders)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Types of Databases -->
+            <section class="mb-5">
+                <h2>Types of Databases</h2>
+                
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-header bg-primary text-white">
+                                <h4>Relational Databases (SQL)</h4>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>What is it?</strong> Data is organized in tables (rows and columns) with relationships between them.</p>
+                                <p><strong>Simple Explanation:</strong> Like an Excel spreadsheet with multiple sheets that are connected to each other.</p>
+                                <h6>Popular SQL Databases:</h6>
+                                <ul>
+                                    <li><strong>MySQL:</strong> Most popular, free, easy to learn</li>
+                                    <li><strong>PostgreSQL:</strong> Advanced features, very powerful</li>
+                                    <li><strong>Oracle:</strong> Enterprise-level, used by big companies</li>
+                                    <li><strong>Microsoft SQL Server:</strong> Windows-based, business applications</li>
+                                </ul>
+                                <p><strong>Used by:</strong> Banks, E-commerce, Social Media, Most Web Applications</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-header bg-success text-white">
+                                <h4>Non-Relational Databases (NoSQL)</h4>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>What is it?</strong> Data is stored in flexible formats like documents, key-value pairs, or graphs.</p>
+                                <p><strong>Simple Explanation:</strong> Like storing data in JSON format or as collections of documents instead of tables.</p>
+                                <h6>Popular NoSQL Databases:</h6>
+                                <ul>
+                                    <li><strong>MongoDB:</strong> Document-based, stores JSON-like data</li>
+                                    <li><strong>Redis:</strong> In-memory, extremely fast for caching</li>
+                                    <li><strong>Cassandra:</strong> Handles huge amounts of data</li>
+                                    <li><strong>Firebase:</strong> Real-time database for mobile apps</li>
+                                </ul>
+                                <p><strong>Used by:</strong> Social Networks, Real-time Apps, Big Data, IoT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SQL Basics -->
+            <section class="mb-5">
+                <h2>SQL (Structured Query Language)</h2>
+                <p>SQL is the language used to communicate with relational databases. It's like English commands that tell the database what to do.</p>
+                
+                <div class="card mb-3">
+                    <div class="card-header bg-info text-white">
+                        <h4>Understanding Database Tables</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>A table is like a spreadsheet with rows and columns:</p>
+                        <h6>Example: Students Table</h6>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>student_id</th>
+                                        <th>name</th>
+                                        <th>age</th>
+                                        <th>course</th>
+                                        <th>email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>John Doe</td>
+                                        <td>22</td>
+                                        <td>Computer Science</td>
+                                        <td>john@email.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Jane Smith</td>
+                                        <td>21</td>
+                                        <td>Engineering</td>
+                                        <td>jane@email.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Bob Johnson</td>
+                                        <td>23</td>
+                                        <td>Business</td>
+                                        <td>bob@email.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <ul>
+                            <li><strong>Table:</strong> Students (the whole thing)</li>
+                            <li><strong>Columns:</strong> student_id, name, age, course, email</li>
+                            <li><strong>Rows:</strong> Each student's data (3 rows in this example)</li>
+                            <li><strong>Primary Key:</strong> student_id (unique identifier for each student)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CRUD Operations -->
+                <h3 class="mt-4">Basic SQL Operations (CRUD)</h3>
+                <p>CRUD stands for <strong>C</strong>reate, <strong>R</strong>ead, <strong>U</strong>pdate, <strong>D</strong>elete - the four basic operations you perform on data.</p>
+
+                <!-- CREATE -->
+                <div class="card mb-3">
+                    <div class="card-header bg-success text-white">
+                        <h5>1. CREATE - Adding New Data (INSERT)</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Purpose:</strong> Add new records to a table</p>
+                        <p><strong>Simple Explanation:</strong> Like adding a new contact to your phone</p>
+                        <h6>Example:</h6>
+                        <pre class="bg-light p-3 rounded"><code>-- Add a new student
+INSERT INTO students (name, age, course, email) 
+VALUES ('Alice Brown', 20, 'Mathematics', 'alice@email.com');
+
+-- Add multiple students at once
+INSERT INTO students (name, age, course, email) 
+VALUES 
+    ('Tom Wilson', 22, 'Physics', 'tom@email.com'),
+    ('Sarah Lee', 21, 'Chemistry', 'sarah@email.com');</code></pre>
+                        <p><strong>What this does:</strong> Adds new student records to the students table</p>
+                    </div>
+                </div>
+
+                <!-- READ -->
+                <div class="card mb-3">
+                    <div class="card-header bg-primary text-white">
+                        <h5>2. READ - Retrieving Data (SELECT)</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Purpose:</strong> Retrieve and view data from tables</p>
+                        <p><strong>Simple Explanation:</strong> Like searching for contacts in your phone</p>
+                        <h6>Examples:</h6>
+                        <pre class="bg-light p-3 rounded"><code>-- Get all students
+SELECT * FROM students;
+
+-- Get specific columns
+SELECT name, email FROM students;
+
+-- Get students with specific condition
+SELECT * FROM students WHERE age > 21;
+
+-- Get students in Computer Science
+SELECT * FROM students WHERE course = 'Computer Science';
+
+-- Sort students by name
+SELECT * FROM students ORDER BY name;
+
+-- Get count of students
+SELECT COUNT(*) FROM students;</code></pre>
+                        <p><strong>What this does:</strong> Retrieves student data based on various conditions</p>
+                    </div>
+                </div>
+
+                <!-- UPDATE -->
+                <div class="card mb-3">
+                    <div class="card-header bg-warning text-dark">
+                        <h5>3. UPDATE - Modifying Existing Data</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Purpose:</strong> Change existing data in tables</p>
+                        <p><strong>Simple Explanation:</strong> Like editing a contact's phone number</p>
+                        <h6>Examples:</h6>
+                        <pre class="bg-light p-3 rounded"><code>-- Update a specific student's email
+UPDATE students 
+SET email = 'newemail@email.com' 
+WHERE student_id = 1;
+
+-- Update multiple columns
+UPDATE students 
+SET age = 23, course = 'Data Science' 
+WHERE name = 'John Doe';
+
+-- Increase age of all students by 1
+UPDATE students SET age = age + 1;</code></pre>
+                        <p><strong>⚠️ Important:</strong> Always use WHERE clause, otherwise it will update ALL rows!</p>
+                    </div>
+                </div>
+
+                <!-- DELETE -->
+                <div class="card mb-3">
+                    <div class="card-header bg-danger text-white">
+                        <h5>4. DELETE - Removing Data</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Purpose:</strong> Remove records from tables</p>
+                        <p><strong>Simple Explanation:</strong> Like deleting a contact from your phone</p>
+                        <h6>Examples:</h6>
+                        <pre class="bg-light p-3 rounded"><code>-- Delete a specific student
+DELETE FROM students WHERE student_id = 5;
+
+-- Delete students older than 25
+DELETE FROM students WHERE age > 25;
+
+-- Delete all students (be careful!)
+DELETE FROM students;</code></pre>
+                        <p><strong>⚠️ Warning:</strong> DELETE is permanent! Always use WHERE clause carefully!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Advanced SQL Concepts -->
+            <section class="mb-5">
+                <h2>Important SQL Concepts</h2>
+
+                <!-- WHERE Clause -->
+                <div class="card mb-3">
+                    <div class="card-header bg-secondary text-white">
+                        <h5>WHERE Clause - Filtering Data</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>WHERE clause filters data based on conditions:</p>
+                        <pre class="bg-light p-3 rounded"><code>-- Single condition
+SELECT * FROM students WHERE age = 22;
+
+-- Multiple conditions (AND)
+SELECT * FROM students WHERE age > 20 AND course = 'Engineering';
+
+-- Multiple conditions (OR)
+SELECT * FROM students WHERE course = 'Math' OR course = 'Physics';
+
+-- LIKE operator (pattern matching)
+SELECT * FROM students WHERE name LIKE 'J%';  -- Names starting with J
+
+-- IN operator (multiple values)
+SELECT * FROM students WHERE course IN ('Math', 'Physics', 'Chemistry');
+
+-- BETWEEN operator (range)
+SELECT * FROM students WHERE age BETWEEN 20 AND 25;</code></pre>
+                    </div>
+                </div>
+
+                <!-- JOINs -->
+                <div class="card mb-3">
+                    <div class="card-header bg-info text-white">
+                        <h5>JOINs - Combining Tables</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Purpose:</strong> Combine data from multiple tables</p>
+                        <p><strong>Simple Explanation:</strong> Like merging two Excel sheets based on a common column</p>
+                        <h6>Example Scenario:</h6>
+                        <p>Two tables: <strong>Students</strong> and <strong>Enrollments</strong></p>
+                        <pre class="bg-light p-3 rounded"><code>-- INNER JOIN: Get students with their enrollment details
+SELECT students.name, enrollments.course_name, enrollments.grade
+FROM students
+INNER JOIN enrollments ON students.student_id = enrollments.student_id;
+
+-- LEFT JOIN: Get all students, even if they're not enrolled
+SELECT students.name, enrollments.course_name
+FROM students
+LEFT JOIN enrollments ON students.student_id = enrollments.student_id;</code></pre>
+                        <p><strong>What this does:</strong> Combines student information with their enrollment data</p>
+                    </div>
+                </div>
+
+                <!-- Aggregate Functions -->
+                <div class="card mb-3">
+                    <div class="card-header bg-success text-white">
+                        <h5>Aggregate Functions - Calculations</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Perform calculations on multiple rows:</p>
+                        <pre class="bg-light p-3 rounded"><code>-- COUNT: Number of students
+SELECT COUNT(*) FROM students;
+
+-- AVG: Average age
+SELECT AVG(age) FROM students;
+
+-- MAX: Maximum age
+SELECT MAX(age) FROM students;
+
+-- MIN: Minimum age
+SELECT MIN(age) FROM students;
+
+-- SUM: Total (useful for numbers like grades, prices)
+SELECT SUM(grade) FROM enrollments;
+
+-- GROUP BY: Count students per course
+SELECT course, COUNT(*) as student_count 
+FROM students 
+GROUP BY course;</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MySQL vs Oracle -->
+            <section class="mb-5">
+                <h2>MySQL vs Oracle vs PostgreSQL</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Feature</th>
+                                <th>MySQL</th>
+                                <th>Oracle</th>
+                                <th>PostgreSQL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Cost</strong></td>
+                                <td>Free (Open Source)</td>
+                                <td>Expensive (Enterprise)</td>
+                                <td>Free (Open Source)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Best For</strong></td>
+                                <td>Web applications, Startups</td>
+                                <td>Large enterprises, Banks</td>
+                                <td>Complex applications</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Learning Curve</strong></td>
+                                <td>Easy for beginners</td>
+                                <td>Complex, requires training</td>
+                                <td>Moderate</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Performance</strong></td>
+                                <td>Fast for most applications</td>
+                                <td>Excellent for large data</td>
+                                <td>Very good overall</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Used By</strong></td>
+                                <td>Facebook, YouTube, Twitter</td>
+                                <td>Banks, Airlines, Telecom</td>
+                                <td>Apple, Instagram, Reddit</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Database Design -->
+            <section class="mb-5 bg-light p-4 rounded">
+                <h2>Database Design Basics</h2>
+                <h4>Key Principles:</h4>
+                <ol>
+                    <li><strong>Primary Key:</strong> A unique identifier for each row (like student_id)
+                        <p class="text-muted">Think of it like your Aadhar number - unique to you</p>
+                    </li>
+                    <li><strong>Foreign Key:</strong> A column that links to another table's primary key
+                        <p class="text-muted">Like your order referencing your customer ID</p>
+                    </li>
+                    <li><strong>Normalization:</strong> Organizing data to reduce duplication
+                        <p class="text-muted">Don't store the same data in multiple places</p>
+                    </li>
+                    <li><strong>Indexes:</strong> Speed up data retrieval
+                        <p class="text-muted">Like an index in a book - helps find things faster</p>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- Tools -->
+            <section class="mb-5">
+                <h2>Database Tools</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>GUI Tools (Visual Interface):</h4>
+                        <ul>
+                            <li><strong>MySQL Workbench:</strong> For MySQL databases</li>
+                            <li><strong>pgAdmin:</strong> For PostgreSQL</li>
+                            <li><strong>DBeaver:</strong> Works with multiple databases</li>
+                            <li><strong>SQL Developer:</strong> For Oracle</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Command Line Tools:</h4>
+                        <ul>
+                            <li><strong>MySQL CLI:</strong> Terminal for MySQL</li>
+                            <li><strong>psql:</strong> PostgreSQL command line</li>
+                            <li><strong>SQLPlus:</strong> Oracle command line</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Learning Path -->
+            <section class="mb-5">
+                <h2>Database Learning Path</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Recommended Learning Order:</h4>
+                        <ol class="lead">
+                            <li><strong>Learn Database Basics</strong> (1-2 weeks)
+                                <ul>
+                                    <li>What is a database?</li>
+                                    <li>Tables, rows, columns</li>
+                                </ul>
+                            </li>
+                            <li><strong>Master SQL Basics</strong> (3-4 weeks)
+                                <ul>
+                                    <li>SELECT, INSERT, UPDATE, DELETE</li>
+                                    <li>WHERE, ORDER BY, LIMIT</li>
+                                </ul>
+                            </li>
+                            <li><strong>Learn Advanced SQL</strong> (4-5 weeks)
+                                <ul>
+                                    <li>JOINs (INNER, LEFT, RIGHT)</li>
+                                    <li>Aggregate functions</li>
+                                    <li>Subqueries</li>
+                                </ul>
+                            </li>
+                            <li><strong>Database Design</strong> (2-3 weeks)
+                                <ul>
+                                    <li>Primary & Foreign Keys</li>
+                                    <li>Normalization</li>
+                                    <li>ER Diagrams</li>
+                                </ul>
+                            </li>
+                            <li><strong>Practice with Real Projects</strong> (Ongoing)
+                                <ul>
+                                    <li>Build actual database schemas</li>
+                                    <li>Optimize queries</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Ideas -->
+            <section class="mb-5">
+                <h2>Database Project Ideas</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5>📚 Library Management</h5>
+                                <p>Create tables for books, members, borrowing records. Track who borrowed which books and when.</p>
+                                <p><strong>Tables:</strong> Books, Members, Loans</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5>🏪 Online Store</h5>
+                                <p>Design database for products, customers, orders, and payments.</p>
+                                <p><strong>Tables:</strong> Products, Customers, Orders, OrderItems</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5>🏥 Hospital Management</h5>
+                                <p>Manage patients, doctors, appointments, and medical records.</p>
+                                <p><strong>Tables:</strong> Patients, Doctors, Appointments, MedicalRecords</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tips for Success -->
+            <section class="mb-5">
+                <h2>Tips for Mastering Databases</h2>
+                <div class="card bg-primary text-white">
+                    <div class="card-body">
+                        <ul class="mb-0">
+                            <li><strong>Practice Daily:</strong> Write SQL queries every day, even simple ones</li>
+                            <li><strong>Use Real Data:</strong> Work with actual datasets, not just examples</li>
+                            <li><strong>Learn by Doing:</strong> Create your own database projects</li>
+                            <li><strong>Understand Relationships:</strong> Focus on how tables connect to each other</li>
+                            <li><strong>Optimize Queries:</strong> Learn to write efficient SQL that runs fast</li>
+                            <li><strong>Use GUI Tools:</strong> Tools like MySQL Workbench help visualize data</li>
+                            <li><strong>Backup Regularly:</strong> Always backup your databases</li>
+                            <li><strong>Study Database Design:</strong> Good design makes everything easier later</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <div class="text-center mt-5">
+                <a href="index.html" class="btn btn-primary btn-lg">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

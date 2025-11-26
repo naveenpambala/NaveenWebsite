@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java Full-Stack | NaveenPambala</title>
+  <!-- Linking CSS File -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Fontawesome link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Bootstrap link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+
+<body>
+  <header class="bg-dark fixed-top">
+    <nav class="container-xxl navbar navbar-expand-lg py-3 bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-3" href="index.html">Pambala Naveen</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#skills">SKILLS</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#cv">CURRICULUM VITAE</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="banner d-flex flex-column align-items-center justify-content-center">
+    <div class="text-center">
+      <h1 class="h1 text-white fw-medium fst-italic">OOP</h1>
+      <h2 class="display-3 text-white fw-bold">Object-Oriented Programming</h2>
+      <a href="#skills" class="btn btn-lg fs-6 fw-medium mt-5 btn-primary p-3">TELL ME MORE</a>
+    </div>
+  </section>
+  <div class="main_container" style="padding: 10px 20px;">
+    <div class="basic_content">
+      <h4><u>Before Starting to Learn Java, You Must Know:</u></h4>
+      <ul>
+        <li>Java is a programming language used to develop dynamic and scalable web applications.</li>
+        <li>Java was developed by James Gosling at Sun Microsystems in June 1991.</li>
+        <li>Java is a high-level, platform-independent, class-based, object-oriented programming language.</li>
+        <li>Java provides its own JRE (Java Runtime Environment) and API (Application Programming Interface)</li>
+        <li>Java is not fully object-oriented because it supports primitive data types like int, char, etc.</li>
+      </ul>
+    </div>
+    <div class="webcontainer">
+      <div class="row">
+        <div class="col-md-12 d-flex flex-column">
+          <h4><u>What is Standalone Application: </u></h4>
+          <p>An application that runs and executes within a single PC (Personal Computer) is called a Standalone Application. 
+          <br><strong>Simple Explanation:</strong> Think of apps on your computer like MS Word or Calculator - they work on your computer alone without needing the internet.</p>
+          <h6>Examples:</h6>
+          <ul>
+            <li>MS PowerPoint</li>
+            <li>MS Word</li>
+            <li>Media Player</li>
+            <li>Calculator</li>
+            <li>Notepad</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-12 d-flex flex-column">
+          <h4><u> What is Web Application:</u> </h4>
+          <p>An application designed with a collection of web pages that runs in a browser through the internet is called a Web Application. 
+          <br><strong>Simple Explanation:</strong> Think of websites like Facebook or Gmail - you access them through a browser (Chrome, Firefox, etc.) using the internet.</p>
+          <h6>Examples:</h6>
+          <ul>
+            <li>www.facebook.com</li>
+            <li>www.amazon.com</li>
+            <li>www.gmail.com</li>
+            <li>www.netflix.com</li>
+          </ul>
+
+          <h5>Basically Web Applications are divided into two types:</h5>
+          <p>(1) Static Web Applications</p>
+          <p>(2) Dynamic Web Applications</p>
+
+          <p style="font-weight: 700;">(1) Static Web Applications: <span style="font-weight: 400;">A web application whose content does not change from one user to another user. Everyone sees the same content.</span></p>
+          <p><strong>Simple Explanation:</strong> Like a digital brochure - everyone sees the same information, like a company's "About Us" page.</p>
+          <h6>Examples:</h6>
+          <ul>
+            <li>about.html (About Us page)</li>
+            <li>contact.html (Contact page)</li>
+            <li>Company brochure websites</li>
+          </ul>
+
+          <p style="font-weight: 700;">(2) Dynamic Web Applications: <span style="font-weight: 400;">A web application whose content changes from one user to another user. Each user sees personalized content.</span></p>
+          <p><strong>Simple Explanation:</strong> Like your Facebook feed - what you see is different from what your friend sees because it's personalized for you.</p>
+          <h6>Examples:</h6>
+          <ul>
+            <li>Facebook (Your timeline is different from others)</li>
+            <li>Instagram (Your feed shows posts from people you follow)</li>
+            <li>Amazon (Shows products based on your interests)</li>
+            <li>Gmail (Shows your emails, not others')</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="row justify-content-between align-items-center text-center" style="background-color: #F7F7FC;">
+        <div class="col-md-3 user_heading">
+          <h5><a href="#class">Class</a> </h5>
+        </div>
+        <div class="col-md-3 user_heading">
+          <h5><a href="#variable">Variable</a></h5>
+        </div>
+        <div class="col-md-3 user_heading">
+          <h5><a href="#methods">Methods</a></h5>
+        </div>
+        <div class="col-md-3 user_heading">
+          <h5><a href="#object">Object</a></h5>
+        </div>
+      </div>
+
+      <div class="class_container mt-5" id="class">
+        <h5>What is Class?</h5>
+        <p>Class is the user defined data type which consists of Variables and Methods.</p>
+        <img src="images/class_java.jpg" alt="">
+      </div>
+      <div class="variable_container mt-5" id="variable">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-5">
+          <h5>What is Variable? How Many Types of Variables?</h5>
+          <ul>
+            <li>Variable is a name given to a particular memory location</li>
+            <li>Purpose of variable is to store values</li>
+          </ul>
+          <p><strong>Simple Explanation:</strong> Think of a variable like a labeled box where you can store things. The label is the variable name, and what you put inside is the value.</p>
+          <h6>Syntax to create variable:</h6>
+          <p>datatype variableName;</p>
+          <p><strong>Example:</strong> int x = 10; (This creates a box labeled "x" that stores the number 10)</p>
+          <h6>Types of Variables:</h6>
+          <img src="images/variable_chart.png" alt="">
+
+        </div>
+        <div class="col-lg-4"></div>
+        <div class="variable_content mt-5">
+          <p style="font-weight: 700;">Static Variables:
+            <span style="font-weight: 400;">
+              The variable declared inside the class and outside the method with the static keyword.
+              <p> => We access static variables using the class name</p>
+              <p> => Static Variables automatically initialize with default values</p>
+              <p><strong>Simple Explanation:</strong> Think of static variables like a shared whiteboard in a classroom - everyone in the class (all objects) can see and use the same whiteboard.</p>
+              <ul>
+                <li>int --> 0</li>
+                <li>double --> 0.0</li>
+                <li>char --> blank</li>
+                <li>String --> null</li>
+              </ul>
+            </span>
+          </p>
+          <p style="font-weight: 700;">Instance Variables: <span style="font-weight: 400;">
+              The variable declared inside the class and outside the method without the static keyword
+              <p>=> Instance variables get memory inside every object and initialize with default values</p>
+              <p>=> We can access instance variables using object reference</p>
+              <p><strong>Simple Explanation:</strong> Think of instance variables like personal notebooks - each student (object) has their own notebook with their own notes.</p>
+            </span> </p>
+          <p style="font-weight: 700;">Local Variables: <span style="font-weight: 400;">A variable declared inside the
+              body of the method is called a local variable. You can use this variable only within that method. Other methods in the class aren't even aware that the variable exists.
+              <p>=> A local variable cannot be defined with the "static" keyword.</p>
+              <p><strong>Simple Explanation:</strong> Think of local variables like sticky notes you use while doing a specific task - once the task is done, you throw away the sticky note.</p>
+            </span> </p>
+
+        </div>
+
+
+      </div>
+      <div class="method_container   mt-5" id="methods">
+        <h5>What is Method in Java?</h5>
+        <p>=> Method is a subprogram (a block of code) which is used to perform specific tasks</p>
+        <p><strong>Simple Explanation:</strong> Think of a method like a recipe. The recipe name is the method name, the ingredients are the parameters, and the cooking instructions are the code inside the method. When you follow the recipe (call the method), you get the final dish (result).</p>
+        <img src="images/method_in_java.png" alt="">
+        <h5>What are Method Parameters in Java?</h5>
+        <p>=> The variables that are declared within the Method Parenthesis are called Method Parameters</p>
+        <p>=> () --> Parenthesis</p>
+        <p>=> Based on the above image, int a, int b are the method parameters (like ingredients for your recipe)</p>
+        <p>=> <strong>Method Name + Method Parenthesis = Method Signature</strong></p>
+      </div>
+      <div class="object_container   mt-5 justify-content-center align-items-center" id="object">
+        <h5>What is Object in Java?</h5>
+        <p>=> Object is an instance of a class, which means creating an actual item from the blueprint (class) and allocating memory for instance variables</p>
+        <p><strong>Simple Explanation:</strong> Think of a class like a blueprint for building a house. The object is the actual house built from that blueprint. You can build many houses (objects) from the same blueprint (class), and each house can have different colors, sizes, etc. (different values for variables).</p>
+        <h6>Syntax of Object Creation:</h6>
+        <p><strong>ClassName referenceName = new Constructor();</strong></p>
+        <p>Example: Car myCar = new Car(); (Creating a car object named "myCar")</p>
+        <img src="images/java_object.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="oop_container mt-5">
+        <h1>What is OOP?</h1>
+        <p>=> OOP stands for Object-Oriented Programming, which is used to write programs by using classes and objects.</p>
+        <p><strong>Simple Explanation:</strong> OOP is like organizing your things into categories. For example, all your books go on a bookshelf, all your clothes go in a closet. Similarly, OOP organizes code into classes (categories) and objects (actual items).</p>
+        <h6>Advantages of OOP:</h6>
+        <ul>
+          <li><strong>Modularity:</strong> Code is organized in separate units (like keeping different subjects in different notebooks)</li>
+          <li><strong>Reusability:</strong> You can use the same code again and again (like using the same recipe to bake multiple cakes)</li>
+          <li><strong>Scalability and Maintainability:</strong> Easy to add new features and fix problems (like adding new rooms to a house)</li>
+          <li><strong>Security:</strong> Hide important details from users (like hiding your password)</li>
+        </ul>
+        <h3>Main Concepts of Object-Oriented Programming:- </h3>
+        <ol>
+          <li>Abstraction</li>
+          <li>Encapsulation</li>
+          <li>Inheritance</li>
+          <li>Polymorphism</li>
+        </ol>
+        <h2> <u>Abstraction :</u> </h2>
+        <p>Abstraction is the process of hiding the implementation details and showing only the necessary information to the user.</p>
+        <h6>Real-World Example:</h6>
+        <ul>
+          <li>Think of a car:
+            <ul>
+              <li>You only need to know how to drive it (steering, brakes, accelerator).</li>
+              <li>You don’t need to know how the engine, transmission, or braking system works internally.</li>
+            </ul>
+          </li>
+           
+        </ul>
+        <h6>Example Program:</h6>
+        <pre>
+          <code>
+            abstract class Vehicle {
+              abstract void start();  // Abstract method (no implementation)
+          }
+          
+          class Car extends Vehicle {
+              @Override
+              void start() {
+                  System.out.println("Car starts with a key or button.");
+              }
+          }
+          
+          public class Main {
+              public static void main(String[] args) {
+                  Vehicle myCar = new Car();
+                  myCar.start();  // Output: Car starts with a key or button.
+              }
+          }
+          
+          </code>
+        </pre>
+        <ul>
+         <li> <h6>Explanation:</h6>  
+           <ul>
+            <li> <span style="font-weight: 700;">Vehicle</span>  is an abstract class, defining the <span style="font-weight: 700;">concept</span> of starting a vehicle but hiding the details.</li>
+            <li><span style="font-weight: 700;">Car</span> provides the actual implementation</li>
+            <li>The user only interacts with the <span style="font-weight: 700;">start()</span> method without worrying about <span style="font-weight: 700;">how</span> it works internally.</li>
+           </ul>
+         </li> 
+        </ul>
+
+        <h2 class="mt-5"> <u>Encapsulation:</u> </h2>
+        <p>Encapsulation is the process of wrapping data (variables) and code (methods) together into a single unit called a class. It also means hiding the internal details and allowing access only through specific methods.</p>
+        <h6>Real-World Example:</h6>
+        <ul>
+          <li>Think of a medicine capsule:
+            <ul>
+              <li>The medicine powder (data) is wrapped inside a capsule (class).</li>
+              <li>You don't need to see or touch the powder directly; you just swallow the capsule.</li>
+              <li>The capsule protects the medicine and controls how you take it.</li>
+            </ul>
+          </li>
+          <li>Another Example - ATM Machine:
+            <ul>
+              <li>You can withdraw money using buttons (public methods).</li>
+              <li>You can't see or access the internal cash storage or mechanisms (private data).</li>
+            </ul>
+          </li>
+        </ul>
+        <h6>Example Program:</h6>
+        <pre>
+          <code>
+            class BankAccount {
+                private double balance;  // Private variable (hidden from outside)
+            
+                // Public method to deposit money
+                public void deposit(double amount) {
+                    if (amount > 0) {
+                        balance = balance + amount;
+                        System.out.println("Deposited: " + amount);
+                    }
+                }
+            
+                // Public method to get balance
+                public double getBalance() {
+                    return balance;
+                }
+            }
+            
+            public class Main {
+                public static void main(String[] args) {
+                    BankAccount myAccount = new BankAccount();
+                    myAccount.deposit(1000);
+                    System.out.println("Balance: " + myAccount.getBalance());
+                    // We cannot directly access myAccount.balance (it's private)
+                }
+            }
+          </code>
+        </pre>
+        <ul>
+         <li> <h6>Explanation:</h6>  
+           <ul>
+            <li>The <span style="font-weight: 700;">balance</span> variable is <span style="font-weight: 700;">private</span>, so no one can directly access or change it.</li>
+            <li>We can only use <span style="font-weight: 700;">deposit()</span> and <span style="font-weight: 700;">getBalance()</span> methods to interact with the balance.</li>
+            <li>This protects the data from unauthorized access and ensures it's modified correctly.</li>
+           </ul>
+         </li> 
+        </ul>
+
+        <h2 class="mt-5"> <u>Inheritance:</u> </h2>
+        <p>Inheritance is a mechanism where a new class (child class) can acquire the properties and methods of an existing class (parent class). This promotes code reusability.</p>
+        <h6>Real-World Example:</h6>
+        <ul>
+          <li>Think of family relationships:
+            <ul>
+              <li>Children inherit characteristics from their parents (like eye color, height, etc.).</li>
+              <li>Similarly, a child class inherits features from its parent class.</li>
+            </ul>
+          </li>
+          <li>Another Example - Vehicle Family:
+            <ul>
+              <li>All vehicles have common features: engine, wheels, brakes.</li>
+              <li>Car, Bus, and Bike are specific types of vehicles that inherit these common features.</li>
+              <li>Each can also have its own unique features (Car has AC, Bike has helmet storage).</li>
+            </ul>
+          </li>
+        </ul>
+        <h6>Example Program:</h6>
+        <pre>
+          <code>
+            // Parent class
+            class Animal {
+                String name;
+            
+                public void eat() {
+                    System.out.println(name + " is eating");
+                }
+            
+                public void sleep() {
+                    System.out.println(name + " is sleeping");
+                }
+            }
+            
+            // Child class inherits from Animal
+            class Dog extends Animal {
+                public void bark() {
+                    System.out.println(name + " is barking: Woof! Woof!");
+                }
+            }
+            
+            // Another child class
+            class Cat extends Animal {
+                public void meow() {
+                    System.out.println(name + " is meowing: Meow! Meow!");
+                }
+            }
+            
+            public class Main {
+                public static void main(String[] args) {
+                    Dog myDog = new Dog();
+                    myDog.name = "Buddy";
+                    myDog.eat();    // Inherited from Animal
+                    myDog.sleep();  // Inherited from Animal
+                    myDog.bark();   // Dog's own method
+            
+                    Cat myCat = new Cat();
+                    myCat.name = "Whiskers";
+                    myCat.eat();    // Inherited from Animal
+                    myCat.meow();   // Cat's own method
+                }
+            }
+          </code>
+        </pre>
+        <ul>
+         <li> <h6>Explanation:</h6>  
+           <ul>
+            <li><span style="font-weight: 700;">Animal</span> is the parent class with common features (eat, sleep).</li>
+            <li><span style="font-weight: 700;">Dog</span> and <span style="font-weight: 700;">Cat</span> are child classes that inherit these features.</li>
+            <li>Each child class can also have its own unique methods (bark for Dog, meow for Cat).</li>
+            <li>This saves us from writing eat() and sleep() methods again for Dog and Cat.</li>
+           </ul>
+         </li> 
+        </ul>
+
+        <h2 class="mt-5"> <u>Polymorphism:</u> </h2>
+        <p>Polymorphism means "many forms." It allows one thing to take multiple forms. In Java, it means you can use the same method name to perform different actions.</p>
+        <h6>Real-World Example:</h6>
+        <ul>
+          <li>Think of a person:
+            <ul>
+              <li>The same person can be a father at home, an employee at work, and a friend at a party.</li>
+              <li>Same person, different roles/behaviors in different situations.</li>
+            </ul>
+          </li>
+          <li>Another Example - The word "Bank":
+            <ul>
+              <li>River Bank (side of a river)</li>
+              <li>Money Bank (financial institution)</li>
+              <li>Blood Bank (stores blood)</li>
+              <li>Same word, different meanings based on context.</li>
+            </ul>
+          </li>
+        </ul>
+        <h6>Example Program:</h6>
+        <pre>
+          <code>
+            class Shape {
+                public void draw() {
+                    System.out.println("Drawing a shape");
+                }
+            }
+            
+            class Circle extends Shape {
+                @Override
+                public void draw() {
+                    System.out.println("Drawing a Circle ⭕");
+                }
+            }
+            
+            class Square extends Shape {
+                @Override
+                public void draw() {
+                    System.out.println("Drawing a Square ⬜");
+                }
+            }
+            
+            class Triangle extends Shape {
+                @Override
+                public void draw() {
+                    System.out.println("Drawing a Triangle 🔺");
+                }
+            }
+            
+            public class Main {
+                public static void main(String[] args) {
+                    Shape myShape;  // Parent class reference
+            
+                    myShape = new Circle();
+                    myShape.draw();  // Calls Circle's draw()
+            
+                    myShape = new Square();
+                    myShape.draw();  // Calls Square's draw()
+            
+                    myShape = new Triangle();
+                    myShape.draw();  // Calls Triangle's draw()
+                }
+            }
+          </code>
+        </pre>
+        <ul>
+         <li> <h6>Explanation:</h6>  
+           <ul>
+            <li>The <span style="font-weight: 700;">draw()</span> method exists in all classes, but it behaves differently in each.</li>
+            <li>We use the same method name <span style="font-weight: 700;">draw()</span>, but it performs different actions based on the object type.</li>
+            <li>This is like saying "draw" to different artists - each will draw in their own style.</li>
+           </ul>
+         </li> 
+        </ul>
+
+        <h3 class="mt-5">Summary of OOP Concepts:</h3>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+              <tr>
+                <th>Concept</th>
+                <th>Simple Definition</th>
+                <th>Real-World Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Abstraction</strong></td>
+                <td>Hiding complex details, showing only what's necessary</td>
+                <td>Using a car without knowing how the engine works</td>
+              </tr>
+              <tr>
+                <td><strong>Encapsulation</strong></td>
+                <td>Wrapping data and protecting it from outside access</td>
+                <td>Medicine capsule, ATM machine</td>
+              </tr>
+              <tr>
+                <td><strong>Inheritance</strong></td>
+                <td>Child class inherits properties from parent class</td>
+                <td>Children inheriting traits from parents</td>
+              </tr>
+              <tr>
+                <td><strong>Polymorphism</strong></td>
+                <td>Same name, different behaviors</td>
+                <td>A person being father, employee, and friend</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Back-end Development | NaveenPambala</title>
+    <!-- Linking CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fontawesome link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+
+<body>
+    <header class="bg-dark fixed-top">
+        <nav class="container-xxl navbar navbar-expand-lg py-3 bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold fs-3" href="index.html">Pambala Naveen</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#skills">SKILLS</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#cv">CURRICULUM VITAE</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#contact">CONTACT</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero d-flex flex-column align-items-center justify-content-center">
+        <div class="text-center">
+            <h1 class="h1 text-white fw-medium fst-italic">Learn</h1>
+            <h2 class="display-3 text-white fw-bold">Back-end<br /> Development</h2>
+            <a href="#content" class="btn btn-lg fs-6 fw-medium mt-5 btn-primary p-3">TELL ME MORE</a>
+        </div>
+    </section>
+
+    <div class="main_container" style="padding: 40px 20px;" id="content">
+        <div class="container">
+            <h1 class="text-center mb-4">Back-End Development with Java</h1>
+            <p class="lead text-center mb-5"><strong>Simple Explanation:</strong> Back-end development is like the kitchen of a restaurant. Customers don't see it, but it's where all the food is prepared, recipes are stored, and orders are managed. In websites, it's the behind-the-scenes logic, database management, and server operations.</p>
+
+            <!-- What is Back-end Development -->
+            <section class="mb-5">
+                <h2>What is Back-End Development?</h2>
+                <p>Back-end development is the server-side of web development. It focuses on databases, server logic, application functionality, and APIs (Application Programming Interfaces). It's everything that happens behind the scenes to make a website or app work properly.</p>
+                <p><strong>Real-World Example:</strong> Think of an ATM machine:</p>
+                <ul>
+                    <li><strong>Front-end:</strong> The screen, buttons, card reader - what you interact with</li>
+                    <li><strong>Back-end:</strong> Checking your balance, verifying your PIN, processing transactions, communicating with the bank's database - all the logic happening behind the scenes</li>
+                </ul>
+            </section>
+
+            <!-- What Back-end Does -->
+            <section class="mb-5 bg-light p-4 rounded">
+                <h2>What Does Back-End Handle?</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>🔐 Security & Authentication</h5>
+                        <p>Verifying user login credentials, managing passwords, ensuring data security</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>💾 Database Operations</h5>
+                        <p>Storing, retrieving, updating, and deleting data from databases</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>🔧 Business Logic</h5>
+                        <p>Processing payments, calculating prices, applying discounts, managing inventory</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Java Back-end Technologies -->
+            <section class="mb-5">
+                <h2>Java Back-End Technologies</h2>
+                <p>Here are the key technologies you need to learn for Java back-end development:</p>
+
+                <!-- JDBC -->
+                <div class="card mb-3">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="mb-0">1. JDBC (Java Database Connectivity)</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>What is it?</strong> JDBC is a Java API that allows Java programs to interact with databases.</p>
+                        <p><strong>Simple Explanation:</strong> Think of JDBC like a telephone line between your Java program and a database. It allows them to communicate - your program can ask for data, and the database can send it back.</p>
+                        <h5>What JDBC Does:</h5>
+                        <ul>
+                            <li>Connects Java applications to databases</li>
+                            <li>Executes SQL queries (SELECT, INSERT, UPDATE, DELETE)</li>
+                            <li>Retrieves results from databases</li>
+                            <li>Manages database transactions</li>
+                        </ul>
+                        <h5>Simple JDBC Example:</h5>
+                        <pre class="bg-light p-3 rounded"><code>// Step 1: Load database driver
+Class.forName("com.mysql.cj.jdbc.Driver");
+
+// Step 2: Establish connection
+Connection con = DriverManager.getConnection(
+    "jdbc:mysql://localhost:3306/mydb", "username", "password");
+
+// Step 3: Create statement
+Statement stmt = con.createStatement();
+
+// Step 4: Execute query
+ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+
+// Step 5: Process results
+while(rs.next()) {
+    System.out.println(rs.getInt(1) + " " + rs.getString(2));
+}
+
+// Step 6: Close connection
+con.close();</code></pre>
+                        <p><strong>What this does:</strong> Connects to a MySQL database, retrieves all student records, and prints them.</p>
+                    </div>
+                </div>
+
+                <!-- Servlets -->
+                <div class="card mb-3">
+                    <div class="card-header bg-success text-white">
+                        <h3 class="mb-0">2. Servlets</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>What is it?</strong> Servlets are Java programs that run on a web server and handle client requests and responses.</p>
+                        <p><strong>Simple Explanation:</strong> Think of a servlet like a waiter in a restaurant. When a customer (user) makes a request (orders food), the waiter (servlet) takes the order to the kitchen (processes it) and brings back the food (response).</p>
+                        <h5>What Servlets Do:</h5>
+                        <ul>
+                            <li>Handle HTTP requests (GET, POST, PUT, DELETE)</li>
+                            <li>Process form data submitted by users</li>
+                            <li>Generate dynamic web content</li>
+                            <li>Manage sessions and cookies</li>
+                            <li>Communicate with databases</li>
+                        </ul>
+                        <h5>Simple Servlet Example:</h5>
+                        <pre class="bg-light p-3 rounded"><code>import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+
+public class HelloServlet extends HttpServlet {
+    
+    // Handle GET request
+    public void doGet(HttpServletRequest request, 
+                      HttpServletResponse response) 
+                      throws ServletException, IOException {
+        
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+        
+        // Get parameter from URL
+        String name = request.getParameter("name");
+        
+        // Send response
+        out.println("<html><body>");
+        out.println("<h1>Hello, " + name + "!</h1>");
+        out.println("</body></html>");
+    }
+}</code></pre>
+                        <p><strong>What this does:</strong> Creates a servlet that receives a name parameter from the URL and displays a personalized greeting.</p>
+                    </div>
+                </div>
+
+                <!-- JSP -->
+                <div class="card mb-3">
+                    <div class="card-header bg-warning text-dark">
+                        <h3 class="mb-0">3. JSP (JavaServer Pages)</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>What is it?</strong> JSP is a technology that helps create dynamic web pages by embedding Java code in HTML.</p>
+                        <p><strong>Simple Explanation:</strong> JSP is like a template where you can mix HTML (for design) with Java code (for logic). It's easier to write than pure servlets for displaying data.</p>
+                        <h5>What JSP Does:</h5>
+                        <ul>
+                            <li>Creates dynamic web pages easily</li>
+                            <li>Separates presentation (HTML) from logic (Java)</li>
+                            <li>Reuses Java components</li>
+                            <li>Simplifies web development</li>
+                        </ul>
+                        <h5>Simple JSP Example:</h5>
+                        <pre class="bg-light p-3 rounded"><code>&lt;%@ page language="java" contentType="text/html" %&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Student Info&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Student Information&lt;/h1&gt;
+    
+    &lt;%
+        // Java code embedded in HTML
+        String name = "John Doe";
+        int age = 22;
+        String course = "Computer Science";
+    %&gt;
+    
+    &lt;p&gt;Name: &lt;%= name %&gt;&lt;/p&gt;
+    &lt;p&gt;Age: &lt;%= age %&gt;&lt;/p&gt;
+    &lt;p&gt;Course: &lt;%= course %&gt;&lt;/p&gt;
+    
+    &lt;% 
+        // Using loops
+        for(int i=1; i&lt;=5; i++) {
+            out.println("&lt;p&gt;Semester " + i + "&lt;/p&gt;");
+        }
+    %&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        <p><strong>What this does:</strong> Creates a dynamic HTML page that displays student information using Java variables and loops.</p>
+                    </div>
+                </div>
+
+                <!-- Spring Framework -->
+                <div class="card mb-3">
+                    <div class="card-header bg-info text-white">
+                        <h3 class="mb-0">4. Spring Framework</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>What is it?</strong> Spring is a comprehensive framework for building enterprise Java applications. It provides tools and features to make development easier.</p>
+                        <p><strong>Simple Explanation:</strong> Think of Spring like a complete construction toolkit with power tools. Instead of building everything manually, you have specialized tools that make the job faster and easier.</p>
+                        <h5>What Spring Provides:</h5>
+                        <ul>
+                            <li><strong>Dependency Injection:</strong> Automatically manages object creation and relationships</li>
+                            <li><strong>Spring MVC:</strong> Framework for building web applications</li>
+                            <li><strong>Spring Security:</strong> Handles authentication and authorization</li>
+                            <li><strong>Spring Data:</strong> Simplifies database operations</li>
+                            <li><strong>Transaction Management:</strong> Manages database transactions easily</li>
+                        </ul>
+                        <h5>Simple Spring Example:</h5>
+                        <pre class="bg-light p-3 rounded"><code>@RestController
+public class StudentController {
+    
+    @Autowired
+    private StudentService studentService;
+    
+    // Handle GET request to /students
+    @GetMapping("/students")
+    public List&lt;Student&gt; getAllStudents() {
+        return studentService.getAllStudents();
+    }
+    
+    // Handle POST request to /students
+    @PostMapping("/students")
+    public Student addStudent(@RequestBody Student student) {
+        return studentService.saveStudent(student);
+    }
+    
+    // Handle GET request to /students/{id}
+    @GetMapping("/students/{id}")
+    public Student getStudent(@PathVariable int id) {
+        return studentService.getStudentById(id);
+    }
+}</code></pre>
+                        <p><strong>What this does:</strong> Creates REST API endpoints to manage student data with very little code.</p>
+                    </div>
+                </div>
+
+                <!-- Spring Boot -->
+                <div class="card mb-3">
+                    <div class="card-header bg-danger text-white">
+                        <h3 class="mb-0">5. Spring Boot</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>What is it?</strong> Spring Boot is built on top of Spring Framework and makes it even easier to create stand-alone, production-ready applications.</p>
+                        <p><strong>Simple Explanation:</strong> If Spring is a toolkit, Spring Boot is like an automatic power tool that's already configured and ready to use. Just press the button and start building!</p>
+                        <h5>Why Spring Boot is Popular:</h5>
+                        <ul>
+                            <li><strong>Auto-Configuration:</strong> Automatically configures your application</li>
+                            <li><strong>Embedded Server:</strong> No need to deploy on external servers</li>
+                            <li><strong>Production-Ready:</strong> Built-in health checks, metrics, monitoring</li>
+                            <li><strong>Fast Development:</strong> Start building quickly with minimal setup</li>
+                            <li><strong>Microservices:</strong> Perfect for building microservice architectures</li>
+                        </ul>
+                        <h5>Simple Spring Boot Application:</h5>
+                        <pre class="bg-light p-3 rounded"><code>@SpringBootApplication
+public class MyApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(MyApplication.class, args);
+    }
+}
+
+@RestController
+class HelloController {
+    
+    @GetMapping("/")
+    public String hello() {
+        return "Hello, World!";
+    }
+    
+    @GetMapping("/greet/{name}")
+    public String greet(@PathVariable String name) {
+        return "Hello, " + name + "!";
+    }
+}</code></pre>
+                        <p><strong>What this does:</strong> Creates a complete web application with REST APIs in just a few lines of code!</p>
+                    </div>
+                </div>
+
+                <!-- Microservices -->
+                <div class="card mb-3">
+                    <div class="card-header bg-secondary text-white">
+                        <h3 class="mb-0">6. Microservices</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>What is it?</strong> Microservices is an architectural style where an application is built as a collection of small, independent services.</p>
+                        <p><strong>Simple Explanation:</strong> Instead of building one big restaurant (monolithic), you build several specialized food trucks (microservices) - one for pizza, one for ice cream, one for drinks. Each operates independently but works together to serve customers.</p>
+                        <h5>Benefits of Microservices:</h5>
+                        <ul>
+                            <li><strong>Independent Deployment:</strong> Update one service without affecting others</li>
+                            <li><strong>Scalability:</strong> Scale only the services that need it</li>
+                            <li><strong>Technology Flexibility:</strong> Use different technologies for different services</li>
+                            <li><strong>Fault Isolation:</strong> If one service fails, others keep running</li>
+                            <li><strong>Easier Maintenance:</strong> Smaller codebases are easier to understand</li>
+                        </ul>
+                        <p><strong>Example Architecture:</strong></p>
+                        <ul>
+                            <li><strong>User Service:</strong> Handles user registration, login, profile</li>
+                            <li><strong>Product Service:</strong> Manages product catalog</li>
+                            <li><strong>Order Service:</strong> Processes orders</li>
+                            <li><strong>Payment Service:</strong> Handles payments</li>
+                            <li><strong>Notification Service:</strong> Sends emails/SMS</li>
+                        </ul>
+                        <p>Each service has its own database and communicates with others via APIs.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Learning Path -->
+            <section class="mb-5">
+                <h2>Back-End Development Learning Path</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Recommended Learning Order:</h4>
+                        <ol class="lead">
+                            <li><strong>Master Java Basics</strong> (4-6 weeks)
+                                <ul>
+                                    <li>OOP concepts</li>
+                                    <li>Collections, Exception Handling</li>
+                                </ul>
+                            </li>
+                            <li><strong>Learn JDBC</strong> (2-3 weeks)
+                                <ul>
+                                    <li>Database connectivity</li>
+                                    <li>CRUD operations</li>
+                                </ul>
+                            </li>
+                            <li><strong>Study Servlets & JSP</strong> (3-4 weeks)
+                                <ul>
+                                    <li>HTTP request/response handling</li>
+                                    <li>Session management</li>
+                                </ul>
+                            </li>
+                            <li><strong>Learn Spring Framework</strong> (4-6 weeks)
+                                <ul>
+                                    <li>Dependency Injection</li>
+                                    <li>Spring MVC</li>
+                                    <li>Spring Data JPA</li>
+                                </ul>
+                            </li>
+                            <li><strong>Master Spring Boot</strong> (4-6 weeks)
+                                <ul>
+                                    <li>REST APIs</li>
+                                    <li>Security</li>
+                                    <li>Testing</li>
+                                </ul>
+                            </li>
+                            <li><strong>Explore Microservices</strong> (6-8 weeks)
+                                <ul>
+                                    <li>Service communication</li>
+                                    <li>API Gateway</li>
+                                    <li>Service discovery</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <!-- API Development -->
+            <section class="mb-5 bg-light p-4 rounded">
+                <h2>REST API Development</h2>
+                <p><strong>What is a REST API?</strong> REST (Representational State Transfer) API is a way for different applications to communicate over HTTP.</p>
+                <p><strong>Simple Explanation:</strong> Think of a REST API like a menu at a restaurant. The menu lists what you can order (endpoints) and how to order it (HTTP methods). The kitchen prepares your order and sends it back.</p>
+                
+                <h5>HTTP Methods (CRUD Operations):</h5>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>HTTP Method</th>
+                                <th>Operation</th>
+                                <th>Example</th>
+                                <th>Purpose</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>GET</strong></td>
+                                <td>Read</td>
+                                <td>GET /students</td>
+                                <td>Retrieve all students</td>
+                            </tr>
+                            <tr>
+                                <td><strong>POST</strong></td>
+                                <td>Create</td>
+                                <td>POST /students</td>
+                                <td>Add a new student</td>
+                            </tr>
+                            <tr>
+                                <td><strong>PUT</strong></td>
+                                <td>Update</td>
+                                <td>PUT /students/1</td>
+                                <td>Update student with ID 1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>DELETE</strong></td>
+                                <td>Delete</td>
+                                <td>DELETE /students/1</td>
+                                <td>Delete student with ID 1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Project Ideas -->
+            <section class="mb-5">
+                <h2>Back-End Project Ideas</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5>📝 Blog API</h5>
+                                <p>Create REST APIs for a blogging platform with posts, comments, and user authentication.</p>
+                                <p><strong>Skills:</strong> Spring Boot, REST API, JWT Authentication</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5>🛒 E-commerce Backend</h5>
+                                <p>Build APIs for product management, shopping cart, orders, and payment processing.</p>
+                                <p><strong>Skills:</strong> Spring Boot, Microservices, Payment Integration</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5>📚 Library Management System</h5>
+                                <p>Develop APIs for managing books, members, borrowing, and returns.</p>
+                                <p><strong>Skills:</strong> Spring Boot, JPA, MySQL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tools & Technologies -->
+            <section class="mb-5">
+                <h2>Essential Tools & Technologies</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Development Tools:</h4>
+                        <ul>
+                            <li><strong>IntelliJ IDEA / Eclipse:</strong> Java IDEs</li>
+                            <li><strong>Maven / Gradle:</strong> Build tools</li>
+                            <li><strong>Postman:</strong> API testing</li>
+                            <li><strong>Git:</strong> Version control</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Servers & Databases:</h4>
+                        <ul>
+                            <li><strong>Apache Tomcat:</strong> Servlet container</li>
+                            <li><strong>MySQL / PostgreSQL:</strong> Relational databases</li>
+                            <li><strong>MongoDB:</strong> NoSQL database</li>
+                            <li><strong>Redis:</strong> Caching</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Career Opportunities -->
+            <section class="mb-5 bg-light p-4 rounded">
+                <h2>Career Opportunities</h2>
+                <p>Java back-end developers are highly sought after in the industry!</p>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>Java Developer</h5>
+                        <p>Entry to mid-level</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Spring Boot Developer</h5>
+                        <p>Framework specialist</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Microservices Architect</h5>
+                        <p>Senior level</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Full-Stack Java Developer</h5>
+                        <p>Front-end + Back-end</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tips for Success -->
+            <section class="mb-5">
+                <h2>Tips for Success in Back-End Development</h2>
+                <div class="card bg-success text-white">
+                    <div class="card-body">
+                        <ul class="mb-0">
+                            <li><strong>Understand Databases:</strong> Learn SQL thoroughly - it's fundamental</li>
+                            <li><strong>Practice REST APIs:</strong> Build APIs for every project idea</li>
+                            <li><strong>Learn Design Patterns:</strong> Singleton, Factory, MVC, etc.</li>
+                            <li><strong>Focus on Security:</strong> Always implement authentication and authorization</li>
+                            <li><strong>Write Clean Code:</strong> Follow naming conventions and best practices</li>
+                            <li><strong>Test Your Code:</strong> Learn unit testing with JUnit and Mockito</li>
+                            <li><strong>Use Version Control:</strong> Master Git and GitHub</li>
+                            <li><strong>Study Open Source:</strong> Read code from popular Java projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <div class="text-center mt-5">
+                <a href="index.html" class="btn btn-primary btn-lg">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
