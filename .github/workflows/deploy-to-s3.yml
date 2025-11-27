@@ -1,0 +1,54 @@
+name: Deploy Static Website to AWS S3
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      # Optional — only if Angular exists
+      - name: Setup Node.js
+        if: hashFiles('package.json') != ''
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install Dependencies (Angular only)
+        if: hashFiles('package.json') != ''
+        run: npm install
+
+      - name: Build Angular App (Angular only)
+        if: hashFiles('package.json') != ''
+        run: npm run build
+
+      - name: Deploy to S3
+        run: |
+          if [ -d "dist" ]; then
+            echo "Deploying Angular build..."
+            folder=$(ls dist)
+            aws s3 sync dist/$folder s3://naveen-fullstackdeveloper --delete
+          else
+            echo "Deploying static HTML site..."
+            aws s3 sync . s3://naveen-fullstackdeveloper --exclude ".git/*" --exclude ".github/*" --delete
+          fi
+
+      - name: Invalidate CloudFront Cache
+        if: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID != '' }}
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*"
