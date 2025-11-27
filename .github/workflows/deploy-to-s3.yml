@@ -11,19 +11,19 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_REGION }}
+          aws-region: ap-south-1   # You can replace with your region
 
-      # Optional — only if Angular exists
+      # Optional — only if Angular project exists
       - name: Setup Node.js
         if: hashFiles('package.json') != ''
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 20
 
@@ -33,7 +33,7 @@ jobs:
 
       - name: Build Angular App (Angular only)
         if: hashFiles('package.json') != ''
-        run: npm run build
+        run: npm run build --if-present
 
       - name: Deploy to S3
         run: |
@@ -42,13 +42,9 @@ jobs:
             folder=$(ls dist)
             aws s3 sync dist/$folder s3://naveen-fullstackdeveloper --delete
           else
-            echo "Deploying static HTML site..."
-            aws s3 sync . s3://naveen-fullstackdeveloper --exclude ".git/*" --exclude ".github/*" --delete
+            echo "Deploying static HTML files..."
+            aws s3 sync . s3://naveen-fullstackdeveloper \
+              --exclude ".git/*" \
+              --exclude ".github/*" \
+              --delete
           fi
-
-      - name: Invalidate CloudFront Cache
-        if: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID != '' }}
-        run: |
-          aws cloudfront create-invalidation \
-            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
-            --paths "/*"
